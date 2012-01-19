@@ -1,5 +1,0 @@
-TSKD:LS
-
-od
-
-git push origin
