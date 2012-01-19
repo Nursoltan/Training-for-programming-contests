@@ -1,9 +1,0 @@
-http://codeforces.com/contest/144/problem/C
-
-
-Perfect failure. 
-Insight of this problem is check all possible case. Sure string length is up to 10^5.
-There is no need to do O(|N|*|M|) solution. Create a[26] table and update every loop.
-This gives O(N*26)=O(N).
-
-P.S: All C problems are easy. But i don't understand why i always fail on this. :S
