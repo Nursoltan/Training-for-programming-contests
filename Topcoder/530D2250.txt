@@ -1,0 +1,11 @@
+Constraint was at most 10. So to check all possible case gives about 3 million which is enought.
+
+To compute minimum moves to sort is half of all difference between sorted array and the permutation. 
+
+For example;
+
+S={5,6,7,8}, T={5,8,6,7};  
+
+D={0,2,1,1} // differences
+
+(2+1+1)/2=2. You will make 2 moves. Which is move a bean 2 to 3, move a bean 2 to 4.
