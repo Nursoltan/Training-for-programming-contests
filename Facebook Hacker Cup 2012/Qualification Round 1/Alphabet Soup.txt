@@ -1,0 +1,2 @@
+My solution didn't tested yet. There is no additional tricks of this problem.
+Just counting the characters. I hope it will be passed.
