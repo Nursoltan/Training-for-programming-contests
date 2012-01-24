@@ -1,0 +1,2 @@
+The idea is so simple. Every element of pre-order is root of subtrees. 
+It can be done simple recursive.
