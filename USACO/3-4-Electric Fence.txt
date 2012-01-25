@@ -1,0 +1,24 @@
+Firstly, we need to know pick's theorom.
+That is for calculate some regular polygon's area.
+A=I+B/2-1;
+
+A stands for area of the polygon
+I is number of lattice points inside the polygon
+B is number of lattice points polygon's boundary.
+
+For this problem we need to calculate I.
+
+That triangle's area is M*P/2. (we have given N,M,P)
+Suppose we have divided into two right angled triangles.
+Left side's area is N*M/2, the other one's (P-N)*M/2
+Our triangle's area is sum of these two triangles.
+N*M/2+(P-N)*M/2=P*M/2
+
+So now, we need to know B. How to calculate B?
+
+Suppose we have line segment that (x1,y1) to (x2,y2).
+Number of integer points of this segment is 
+gcd(|x1-x2|,|y1-y2|)+1.
+
+We have three line segments and 3 points are duplicated, which is 
+sum of B's of these 3 lines and substract 3. 
