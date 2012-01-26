@@ -1,0 +1,15 @@
+We use dp to solve this problem.
+
+dp[a][b][c]
+
+a - current disk
+b - length used for current disk
+c - current song
+
+For first, loop c+1 to N for stack a new song to current disk.
+We have two cases for this. First, (suppose d is for new one) 
+push d'th song into a'th disk. Second, push d'th song into a+1'th disk.
+
+dp[a][b+len[d]][d] depends on dp[a][b][c]+1
+or
+dp[a+1][len[d]][d] depends on dp[a][b][c]+1 
