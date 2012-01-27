@@ -1,0 +1,7 @@
+So here is the deal. I'm in Chapter 4. But this problem seems should be putted 
+in section 1 or 2. 
+
+First, gcd(of all numbers) is not 1, there is no boundary.
+Constraint says, answer is up to 2 billion. But actually it is only 256^2.
+
+ 
