@@ -1,0 +1,8 @@
+In order to get to point (i,j) from origin, there is C(i,i+j) or C(j,i+j) ways
+to reach there. C(i,j) is binomial coefficient. In other word, number of ways to
+to get sets j from i.
+
+Suppose, target is (x1,y1) and checkpoint is (x2,y2). Number of ways to get there is
+C(x1,x1+y1)*C(x2,x2+y2).
+
+We can precalculate all possible ways to reach. (10 million is pretty small)
