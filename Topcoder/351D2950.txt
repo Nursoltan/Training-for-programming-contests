@@ -1,0 +1,5 @@
+This is minimum spanning tree problem. For first, we have 2 kind of edges: 
+destroying edges and building edges.
+
+I used Union Find method (very simple to code). When connecting two cities 
+decide whether it's destroying or building edges.
