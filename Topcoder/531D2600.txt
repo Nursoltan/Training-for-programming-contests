@@ -1,0 +1,10 @@
+Suppose that we are choose the possibility of sets from i song 
+list using j different kind of songs.
+
+1-We can push the song to the list that never pushed to the list
+2-We can push the song that pushed before
+
+which gives us this formula : 
+f(i,j)=f(i-1,j-1)+f(i-1,j)*(j-M)
+
+So our answer is f(P,N)*N!
