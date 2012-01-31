@@ -1,0 +1,12 @@
+Let's say dp[i][j] for number of different way from set that contain i songs using j different songs.
+The answer is dp[P][N]*N!
+
+dp[i][j]=dp[i-1][j-1]+dp[i-1][j]*(j-M)
+
+1. put song completely different from that chosen before.
+2. put song has chosen before. 
+
+For example:
+dp[4,3] is 3 (when M is 1); Answer is 3*3!=18
+
+the set is {1,2,1,3},{1,2,3,1},{1,2,3,2} 

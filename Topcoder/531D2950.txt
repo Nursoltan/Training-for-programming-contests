@@ -1,0 +1,3 @@
+Minimum spanning tree problem. The only thing that notice is when connecting
+two cities for edge, decide that whether it's building edge or destroying.
+I think it's pretty simple problem. 
