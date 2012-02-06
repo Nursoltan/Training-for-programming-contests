@@ -1,0 +1,22 @@
+That was really though one. It's actually NP problem.
+There is no other way than brute force. But using some
+observasions we can reduce times.
+
+The main idea is DFS.
+for i'th rail, choose one of boards 0 to N. And then run DFS again for i-1'th rail.
+2D DFS. Time will grow exponentially. So there is some optimizations.
+
+Observation 1:
+	Before using DFS sort all boards and rails. It would be optimal. And also we can 
+	reduce rails size. Assume that sum[i]=(sum of rails 0 to i), if sum[i] is greater than
+	total length of board, then we can't cut this. Because there is not enougth support(board) on this.
+  
+Observation 2:
+	During DFS, we should iterate (assume i) all board 0 to end. If board[i]<rail[x] then 
+	we can't cut. Instead of iterate 0 to end, it's more optimal iterate ind[i] to end.
+	ind[i] is index that board[i] can cut rail[x] (board[i]>=rail[x])
+
+Observation 3:
+	Suppose we just cut rail[i] and moving for cut rail[i-1] and rail[i]==rail[i-1] then 
+	we don't need to iterate ind[i-1] to end. Instead iterate x to N (x is index of board that used to cut rail[i]).
+	This would be faster.
